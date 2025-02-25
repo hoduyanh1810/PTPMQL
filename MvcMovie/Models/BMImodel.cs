@@ -1,3 +1,6 @@
+namespace Net_Core_API;
+
+public class BMImodel
 using System.ComponentModel.DataAnnotations;
 
 namespace BMICalculatorApp.Models

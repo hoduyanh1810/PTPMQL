@@ -1,3 +1,6 @@
+namespace Net_Core_API;
+
+public class BMIcontroller.
 using System;
 using System.Web.Mvc;
 using BMICalculatorApp.Models;
