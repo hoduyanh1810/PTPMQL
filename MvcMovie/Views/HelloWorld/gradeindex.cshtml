@@ -1,0 +1,41 @@
+@model GradeCalculatorApp.Models.GradeCalculator
+
+@{
+    ViewBag.Title = "Tính Điểm Môn Học";
+}
+
+<h2>Tính Điểm Môn Học</h2>
+
+@using (Html.BeginForm("Index", "Grade", FormMethod.Post))
+{
+    <div>
+        <label>Điểm kiểm tra (30%):</label>
+        @Html.TextBoxFor(m => m.TestScore, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.TestScore)
+    </div>
+
+    <div>
+        <label>Điểm giữa kỳ (30%):</label>
+        @Html.TextBoxFor(m => m.MidtermScore, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.MidtermScore)
+    </div>
+
+    <div>
+        <label>Điểm cuối kỳ (40%):</label>
+        @Html.TextBoxFor(m => m.FinalScore, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.FinalScore)
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-2">Tính Điểm</button>
+}
+
+@if (ViewBag.Result != null)
+{
+    <div class="alert alert-info mt-3">
+        @ViewBag.Result
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
