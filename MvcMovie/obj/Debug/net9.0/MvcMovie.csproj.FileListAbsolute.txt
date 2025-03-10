@@ -6,3 +6,11 @@ C:\Users\Admin\Documents\Net_Core_API\MvcMovie\obj\Debug\net9.0\MvcMovie.MvcAppl
 C:\Users\Admin\Documents\Net_Core_API\MvcMovie\obj\Debug\net9.0\MvcMovie.RazorAssemblyInfo.cache
 C:\Users\Admin\Documents\Net_Core_API\MvcMovie\obj\Debug\net9.0\MvcMovie.RazorAssemblyInfo.cs
 C:\Users\Admin\Documents\Net_Core_API\MvcMovie\obj\Debug\net9.0\MvcMovie.sourcelink.json
+C:\HDA_BTH_PTPMQL\MvcMovie\obj\Debug\net9.0\MvcMovie.GeneratedMSBuildEditorConfig.editorconfig
+C:\HDA_BTH_PTPMQL\MvcMovie\obj\Debug\net9.0\MvcMovie.AssemblyInfoInputs.cache
+C:\HDA_BTH_PTPMQL\MvcMovie\obj\Debug\net9.0\MvcMovie.AssemblyInfo.cs
+C:\HDA_BTH_PTPMQL\MvcMovie\obj\Debug\net9.0\MvcMovie.csproj.CoreCompileInputs.cache
+C:\HDA_BTH_PTPMQL\MvcMovie\obj\Debug\net9.0\MvcMovie.MvcApplicationPartsAssemblyInfo.cache
+C:\HDA_BTH_PTPMQL\MvcMovie\obj\Debug\net9.0\MvcMovie.RazorAssemblyInfo.cache
+C:\HDA_BTH_PTPMQL\MvcMovie\obj\Debug\net9.0\MvcMovie.RazorAssemblyInfo.cs
+C:\HDA_BTH_PTPMQL\MvcMovie\obj\Debug\net9.0\MvcMovie.sourcelink.json
