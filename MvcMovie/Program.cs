@@ -1,10 +1,10 @@
-using Microsoft.EntilyFrameWorkCore;
-using MvcMovie.Models;
+using Microsoft.EntityFrameworkCore;
+using MvcMovie.Data;
 
-var builder = WebApplications.CreateBuilder(args);
-builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection") 
-?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.")));
+var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
+
