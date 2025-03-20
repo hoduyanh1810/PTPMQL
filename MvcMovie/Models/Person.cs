@@ -10,7 +10,7 @@ namespace MvcMovie.Models
     [Key]
     public required string PersonId { get; set;}
 
-    public required string Fullname { get; set; }  
+    public required string FullName { get; set; }  
     public required string Address { get; set; }
 }
 
