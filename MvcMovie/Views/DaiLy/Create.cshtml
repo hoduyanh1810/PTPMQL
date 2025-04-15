@@ -1,0 +1,25 @@
+@model MvcMovie.Models.DaiLy
+
+<h2>Thêm Đại Lý</h2>
+
+<form asp-action="Create" method="post">
+    <label>Mã Đại Lý</label>
+    <input asp-for="MaDaiLy" /><br />
+
+    <label>Tên Đại Lý</label>
+    <input asp-for="TenDaiLy" /><br />
+
+    <label>Địa Chỉ</label>
+    <input asp-for="DiaChi" /><br />
+
+    <label>Người Đại Diện</label>
+    <input asp-for="NguoiDaiDien" /><br />
+
+    <label>Điện Thoại</label>
+    <input asp-for="DienThoai" /><br />
+
+    <label>Mã Hệ Thống Phân Phối</label>
+    <input asp-for="MaHTPP" /><br />
+
+    <button type="submit">Lưu</button>
+</form>

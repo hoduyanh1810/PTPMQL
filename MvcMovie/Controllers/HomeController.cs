@@ -13,8 +13,19 @@ public class HomeController : Controller
         _logger = logger;
     }
 
+    // GET: Hiển thị form nhập liệu
     public IActionResult Index()
     {
+        return View();
+    }
+
+    // POST: Xử lý dữ liệu từ form
+    [HttpPost]
+    public IActionResult Index(string PersonID, string FullName, string Address)
+    {
+        // Xử lý dữ liệu form
+        ViewBag.Message = $"Bạn đã nhập: PersonID = {PersonID}, FullName = {FullName}, Address = {Address}";
+
         return View();
     }
 

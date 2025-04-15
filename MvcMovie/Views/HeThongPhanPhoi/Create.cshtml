@@ -1,0 +1,13 @@
+@model MvcMovie.Models.HeThongPhanPhoi
+
+<h2>Thêm Hệ Thống Phân Phối</h2>
+
+<form asp-action="Create" method="post">
+    <label>Mã HTPP</label>
+    <input asp-for="MaHTPP" /><br />
+
+    <label>Tên HTPP</label>
+    <input asp-for="TenHTPP" /><br />
+
+    <button type="submit">Lưu</button>
+</form>

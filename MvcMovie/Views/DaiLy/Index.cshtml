@@ -1,0 +1,37 @@
+@model IEnumerable<MvcMovie.Models.DaiLy>
+
+@{
+    ViewData["Title"] = "Danh sách Đại lý";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>MaDaiLy</th>
+            <th>TenDaiLy</th>
+            <th>DiaChi</th>
+            <th>NguoiDaiDien</th>
+            <th>DienThoai</th>
+            <th>MaHTPP</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var daiLy in Model)
+    {
+        <tr>
+            <td>@daiLy.MaDaiLy</td>
+            <td>@daiLy.TenDaiLy</td>
+            <td>@daiLy.DiaChi</td>
+            <td>@daiLy.NguoiDaiDien</td>
+            <td>@daiLy.DienThoai</td>
+            <td>@daiLy.MaHTPP</td>
+            <td>
+                <a href="@Url.Action("Details", "DaiLy", new { id = daiLy.MaDaiLy })">Chi tiết</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
